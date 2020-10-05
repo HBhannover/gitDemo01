@@ -33,4 +33,20 @@ Mac/Ubuntu:
 	3.4 git diff: xem noi dung cac file cu da bi thay doi ke tu lan commit gan nhat ==> thoat ra ngoai bang phim: "q"
 	3.5 gitk ==> Mo giao dien GUI
 	3.6 git checkout --<file> : Xoa thay doi tai <file>
+	3.7 File .gitignore
+	3.8 git revert <Commit-id>
+	3.9 De config 5 tieng phai nhap pass mot lan thi dung cau lenh.
+		git config global credential.helper "cache --timeout=18000"
+
+4. Git va GitHub
+	4.1. Tao Repo tren GitHub
+	4.2. Tao ket noi giua Local-Repo va Remote-Repo: git remote add origin <GitHub-Repo-Link>
+	4.3. Push code len tren GitHub:
+		4.3.1: Lan dau tien: git push -u origin master
+		4.3.2: Lan tiep theo: git push
+	4.4. Clone Project ve may: 
+		git clone <GitHub-Repo-Link>
+	4.5 Cap nhat code moi tu GitHub ve may:
+		git pull 
+	
 
