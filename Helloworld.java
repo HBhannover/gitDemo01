@@ -14,11 +14,16 @@ public class Helloworld{
   }
 
 	public static void main (String[] args){
+    String text = "Today is \"Monday\" and is a beautiful day";
+
 	System.out.println("Hello world!");
 	int Sum = Common.Sum(5,7);
 	System.out.println("Sum is: "+Sum);
 	System.out.println("Müller UTF8 -->1252: "+convertUTF8toWindows1252 ("Müller"));
 	System.out.println("Müller 1252 --> UTF8: "+convert1252toUTF8 ("Müller"));
+
 	System.out.println("convertArray: "+Arrays.toString(stringArray));
+
+	Common.getStringBetweenTwoChars (text, "\"", "\"");
 	}
 }
