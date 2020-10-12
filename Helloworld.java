@@ -19,5 +19,6 @@ public class Helloworld{
 	System.out.println("Sum is: "+Sum);
 	System.out.println("Müller UTF8 -->1252: "+convertUTF8toWindows1252 ("Müller"));
 	System.out.println("Müller 1252 --> UTF8: "+convert1252toUTF8 ("Müller"));
+	System.out.println("convertArray: "+Arrays.toString(stringArray));
 	}
 }
