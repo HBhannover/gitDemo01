@@ -16,12 +16,12 @@ Mac/Ubuntu:
 	2.1. Working-Directory
 	2.2. Staging area
 	2.3. Git-Directory
-		[Working-Directory] ------------git add----------> [Staging area] --------git commit---------> [Git-Directory]
-		    |       |	|					|     |					    |   |   |	
-		    |  	    |	|<---------git reset HEAD <file> -------|     |<-----git reset --soft <Commit-ID> --|	|   |	  		 									         	|   |
- git checkout <-----|       <----------------------------------- git reset --mixed <Commit-ID> ---------------------------- |	
-	            	                                                                                                    |
-	      <------------------------------------------------ git reset --hard <Commit-ID> --------------------------------
+		[Working-Directory] -----git add-----> [Staging area] ----git commit------> [Git-Directory]
+		    |       |	|			    |     |			             |  | |	
+		    |  	    |	|<--git reset HEAD <file> --|     |<--git reset --soft <Commit-ID> --|	| |	  		 									         	|   |
+   git checkout <---|       <------------------------- git reset --mixed <Commit-ID> -------------------| | 	
+	            	                                                                                  |
+	      <------------------------------------------------ git reset --hard <Commit-ID> --------------
 
 
 
@@ -37,6 +37,14 @@ Mac/Ubuntu:
 	3.8 git revert <Commit-id>
 	3.9 De config 5 tieng phai nhap pass mot lan thi dung cau lenh.
 		git config global credential.helper "cache --timeout=18000"
+	3.10. Re nhanh va chuyen sang nhanh do:
+		git branch -b <Ten cua Branch>
+	3.11. Chuyen sang mot Branch da co san.
+		git branch <Ten Branch da co san>
+	3.12. Merge Branch B vao Branch A
+		git checkout A --> git merge B
+	3.13. Xoa mot Branch:
+		git branch -D <Ten Branch muon xoa>
 
 4. Git va GitHub
 	4.1. Tao Repo tren GitHub
