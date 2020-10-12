@@ -4,4 +4,9 @@ public class Common {
     int Sum = a + b;
     return Sum;
   }
+  public static String[] convertStringToArray(String stringText, String splitCriteria){
+    String[] stringArray = stringText.split(splitCriteria);
+    return stringArray;
+  }
+
 }
