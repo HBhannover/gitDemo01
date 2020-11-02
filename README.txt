@@ -55,7 +55,7 @@ Mac/Ubuntu:
 	4.4. Clone Project ve may: 
 		git clone <GitHub-Repo-Link>
 	4.5 Cap nhat code moi tu GitHub ve may:
-		git pull 
+		git pull origin <Branch>
 	4.6 Cap nhat code moi tu GitHub ve may lan dau tien, ma tren GitHub da co san cac thay doi tu truoc roi:
 		git pull origin <Branch> --allow-unrelated-histories
 
