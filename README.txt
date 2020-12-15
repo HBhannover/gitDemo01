@@ -29,6 +29,7 @@ Mac/Ubuntu:
 3. Cac lenh trong Git:
 	3.1 git init --> git status --> git add --> git commit -m ""
 	3.2 git log: xem lich su commit cung voi id cua commit do
+	    git log --oneline --graph: Xem theo dong	
 	3.3 git show + id: xem cu the cai gi da duoc thay doi trong commit nay, neu khong +id thi no se xem thay doi cua commit gan nhat.
 	3.4 git diff: xem noi dung cac file cu da bi thay doi ke tu lan commit gan nhat ==> thoat ra ngoai bang phim: "q"
 	3.5 gitk ==> Mo giao dien GUI
@@ -45,6 +46,17 @@ Mac/Ubuntu:
 		git checkout A --> git merge B
 	3.13. Xoa mot Branch:
 		git branch -D <Ten Branch muon xoa>
+	3.14. Vai lenh GIT quan trong nua:
+	       - Xem lich su cac Commit, ke ca nhung Commit bi xoa, bi convert, bi rebase, etc..
+	       	 git reflog
+	       - Xem Cofig cua GIT cho du an hien tai:
+	       	 git config --list
+	       - Tu Commit hien tai ta muon lay them cac thay doi o nhung Commit khac bat ky cho vao Commit hien tai (Sau do phai xu ly Conflicts)
+	       	 git cherry-pick <Commit-ID>
+	       - Dang o Commit hien tai, muon nhay sang mit Commit khac:
+	         git checkout <Commit-ID>
+	       - Xem lich su Commit theo dong:
+	         git log --oneline --graph
 
 4. Git va GitHub
 	4.1. Tao Repo tren GitHub
@@ -52,11 +64,18 @@ Mac/Ubuntu:
 	4.3. Push code len tren GitHub:
 		4.3.1: Lan dau tien: git push -u origin master
 		4.3.2: Lan tiep theo: git push
-	4.4. Clone Project ve may: 
-		git clone <GitHub-Repo-Link>
-	4.5 Cap nhat code moi tu GitHub ve may:
+		4.3.3: push mot Local-Branch len Remote-Branch (khong phai Master), neu lan dau tien thi nen co them -u giong nhu 4.3.1
+			git push origin <Local-Branch>:<Remote-Branch>
+		4.3.4: Clone Project ve may: 
+			git clone <GitHub-Repo-Link>
+		4.3.5: Clone mot RemoteBranch ve Local-Repo:
+		       1. Tao mot Local-Folder de chua RemoteBranch.
+		       2. Tu GitBash/CMD cua Local-Folder thu hien lenh:
+		       git clone <Link-Remote-Repo.git> -b <Remote-Branch> <./Local-Branch>
+		       
+	4.4 Cap nhat code moi tu GitHub ve may:
 		git pull origin <Branch>
-	4.6 Cap nhat code moi tu GitHub ve may lan dau tien, ma tren GitHub da co san cac thay doi tu truoc roi:
+	4.5 Cap nhat code moi tu GitHub ve may lan dau tien, ma tren GitHub da co san cac thay doi tu truoc roi:
 		git pull origin <Branch> --allow-unrelated-histories
 
 	
